@@ -149,7 +149,7 @@ curl -X POST http://localhost:5555/recommend \
 6. Set `MONGODB_URI` in `.env`:
 
 ```
-MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/?appName=MovieRecommender
+MONGODB_URI=mongodb+srv://<your-username>:<your-password>@<your-cluster>.mongodb.net/?appName=MovieRecommender
 ```
 
 ### Option 2: Local MongoDB
@@ -172,7 +172,7 @@ SECRET_KEY=your-secret-key-here
 FLASK_ENV=development
 
 # Database
-MONGODB_URI=mongodb+srv://...
+MONGODB_URI=mongodb+srv://<your-username>:<your-password>@<your-cluster>.mongodb.net/?appName=MovieRecommender
 MONGODB_DB_NAME=movierecommender
 DATABASE_URL=sqlite:///app.db  # Fallback
 
